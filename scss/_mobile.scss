@@ -1,10 +1,14 @@
 //XL
 @include mediaXL {
-
+	.projects {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 @include mediaLarge {
-	
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @include mediaMedium {
@@ -57,13 +61,22 @@
 
 		grid-template-columns: 1fr;
 	}
-	.bio-image {
-		width: 150px;
-		height: 150px;
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 
 @include mediaSmall {
-	
+	.bio-image {
+		width: 150px;
+		height: 150px;
+	}
+	.projects {
+		grid-template-columns: 1fr;
+	}
 }
+
+
+
+
