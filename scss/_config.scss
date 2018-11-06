@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Prompt|Vollkorn');
 
 $primary-color: #444;
 $secondary-color: #eece1a;
@@ -29,5 +28,29 @@ $profile-image: url(../img/profile_pic.jpg);
 				background: rgba($primary-color, $background-opacity);
 			}
 		}
+	}
+}
+//Media Querry mixins
+@mixin mediaSmall {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin mediaMedium {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin mediaLarge {
+	@media screen and (min-width: 769px) and
+	(max-width: 1170px) {
+		@content;
+	}
+}
+@mixin mediaXL {
+	@media screen and (min-width: 1171px) {
+		@content;
 	}
 }
