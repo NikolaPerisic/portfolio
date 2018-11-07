@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.95;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: rgba(55, 55, 55, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.8s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: rgba(68, 68, 68, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.8s ease-out; }
     .menu-branding.show {
@@ -211,6 +210,8 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+      .boxes div:hover i {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -283,4 +284,10 @@ main {
     width: 150px;
     height: 150px; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  main {
+    padding: 4rem 1rem 1rem 1rem; }
+  .bio {
+    font-size: 1.3rem; }
+  .info {
+    font-size: 1rem; } }

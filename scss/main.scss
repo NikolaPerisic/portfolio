@@ -151,6 +151,9 @@ main {
 			span {
 				color: set-text-color($secondary-color);
 			}
+			i {
+				color: set-text-color($secondary-color);
+			}
 		}
 	}
 }
@@ -168,6 +171,8 @@ main {
 	}
 }
 
+// My Work buttons
+
 .btn-dark {
 	@extend .btn;
 	background: darken($primary-color, 50);
@@ -180,11 +185,7 @@ main {
 }
 
 
-
-
-
-
-
+//Footer section
 #main-footer {
 	text-align: center;
 	padding: 1rem;
@@ -192,6 +193,8 @@ main {
 	color: set-text-color($primary-color);
 	height: 50px;
 }
+
+
 
 @import 'mobile';
 
