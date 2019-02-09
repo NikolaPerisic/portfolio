@@ -1,16 +1,15 @@
 {
-  "name": "modern_portfolio",
-  "version": "1.0.0",
-  "description": "Responsive Portfolio",
-  "main": "index.js",
-  "homepage": "https://nikolaperisic.github.io/portfolio/",
-  "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
-  },
-  "author": "Nikola Perisic",
-  "license": "MIT",
-  "dependencies": {
-    "node-sass": "^4.11.0"
-  }
+	"name": "modern_portfolio",
+	"version": "1.0.0",
+	"description": "Responsive Portfolio",
+	"main": "index.js",
+	"homepage": "https://nikolaperisic.github.io/portfolio/",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o docs/css/ --recursive"
+	},
+	"author": "Nikola Perisic",
+	"license": "MIT",
+	"dependencies": {
+		"node-sass": "^4.11.0"
+	}
 }
